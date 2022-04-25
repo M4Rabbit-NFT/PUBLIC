@@ -52,7 +52,7 @@ contract TeamVesting is ReentrancyGuard {
 
         uint _withdrawableBalance = mulScale(initialContractBalance, 1000, 10000); // 1000 basis points = 10%.
 
-        if(token.balanceOf(adtokensPerBNBdress(this)) <= _withdrawableBalance) {
+        if(token.balanceOf(address(this)) <= _withdrawableBalance) {
             token.transfer(teamWallet, token.balanceOf(address(this)));
         } else {
             claimReady = block.timestamp + cooldownTime;
