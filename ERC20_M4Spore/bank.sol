@@ -8,10 +8,10 @@ contract TeamBanking is ReentrancyGuard {
     IERC20 public token;
     uint public cooldownTime = 1 days; // cooldown time
     uint public claimReady; //save claim  time
-    address tm1 = 0xD12BF4xxxxxxxx89D0cDD05a1a5014560569;
-    address tm2 = 0x91Dd086xxxxxxxxxxx5732c85c7b707EeBBe;
-    address tm3 = 0xD12Bxxxxxxxxxxxxx0cDD05a1a5014560569;
-    address tm4 = 0x91DdxxxxxxxxxxxF8a2B5732c85c7b707EeBBe;
+    address tm1 = 0x000000000000000000000000000000000000;
+    address tm2 = 0x000000000000000000000000000000000000;
+    address tm3 = 0x000000000000000000000000000000000000;
+    address tm4 = 0x000000000000000000000000000000000000;
 
     constructor(IERC20 _token) {
         token = _token;//erc20 token address of token to be held in this contract

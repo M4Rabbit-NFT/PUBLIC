@@ -1,166 +1,170 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.6;
-//testnet router: https://pancake.kiemtienonline360.com/- 0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3 
-s
-import "./Libraries.sol";
+//COMMENTED BECAUSE WE WILL USE A FACTORY CONTRACT TO DEPLOY THUS THIS CONTRACT IS NULL
 
-contract PLRToken {
-    string public name = "M4Spore Token";
-    string public symbol = "M4SPR";
-    uint256 public totalSupply = 10000000; // 10 millon
-    uint8 public decimals = 2;
-    address public teamWallet; // owner
-    address public marketingWallet; // marketing
-    address private firstPresaleContract; // first presale address
-    address private secondPresaleContract; // second presale address
-    address private teamVestingContract; // team vesting contract
-    IUniswapV2Router02 router; // Router.
-    address private pancakePairAddress; // the pancakeswap pair address.
-    uint public liquidityLockTime = 0 days; // how long do we lock up liquidity
-    uint public liquidityLockCooldown;// cooldown period for changes to liquidity settings and removal
+//THE TOKENS WILL BE MINTED TO A GNOSIS SAFE MULTISIG WALLET FOR 
+//DISTRIBUTION TO THE OTHER CONTRACTS MANUALLY
+// // SPDX-License-Identifier: MIT
+// pragma solidity ^0.8.6;
+// //testnet router: https://pancake.kiemtienonline360.com/- 0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3 
+// s
+// import "./Libraries.sol";
 
-    mapping(address => uint256) public balanceOf;
-    mapping(address => mapping(address => uint256)) private _allowances;
+// contract PLRToken {
+//     string public name = "M4Spore Token";
+//     string public symbol = "M4SPR";
+//     uint256 public totalSupply = 10000000; // 10 millon
+//     uint8 public decimals = 2;
+//     address public teamWallet; // owner
+//     address public marketingWallet; // marketing
+//     address private firstPresaleContract; // first presale address
+//     address private secondPresaleContract; // second presale address
+//     address private teamVestingContract; // team vesting contract
+//     IUniswapV2Router02 router; // Router.
+//     address private pancakePairAddress; // the pancakeswap pair address.
+//     uint public liquidityLockTime = 0 days; // how long do we lock up liquidity
+//     uint public liquidityLockCooldown;// cooldown period for changes to liquidity settings and removal
 
-    event Transfer(address indexed _from, address indexed _to, uint256 _value);
-    event Approval(address indexed _owner, address indexed _spender, uint256 _value);
+//     mapping(address => uint256) public balanceOf;
+//     mapping(address => mapping(address => uint256)) private _allowances;
 
-    constructor(
-        address _teamWallet, 
-        address _marketingWallet, 
-        address _firstPresaleContract, 
-        address _secondPresaleContract, 
-        address _teamVestingContract) {
-        teamWallet = _teamWallet;
-        marketingWallet = _marketingWallet;
-        firstPresaleContract = _firstPresaleContract;
-        secondPresaleContract = _secondPresaleContract;
-        teamVestingContract = _teamVestingContract;
-        router = IUniswapV2Router02(0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3);//router address for pair creation
-        pancakePairAddress = IPancakeFactory(router.factory()).createPair(address(this), router.WETH());
+//     event Transfer(address indexed _from, address indexed _to, uint256 _value);
+//     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 
-        uint _firstPresaleTokens =  15000000;
-        uint _secondPresaleTokens = 15000000;
-        uint _teamVestingTokens =   20000000;
-        uint _marketingTokens =     15000000;
-        uint _contractTokens = totalSupply - (_teamVestingTokens + _marketingTokens + _firstPresaleTokens + _secondPresaleTokens);
+//     constructor(
+//         address _teamWallet, 
+//         address _marketingWallet, 
+//         address _firstPresaleContract, 
+//         address _secondPresaleContract, 
+//         address _teamVestingContract) {
+//         teamWallet = _teamWallet;
+//         marketingWallet = _marketingWallet;
+//         firstPresaleContract = _firstPresaleContract;
+//         secondPresaleContract = _secondPresaleContract;
+//         teamVestingContract = _teamVestingContract;
+//         router = IUniswapV2Router02(0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3);//router address for pair creation
+//         pancakePairAddress = IPancakeFactory(router.factory()).createPair(address(this), router.WETH());
 
-        balanceOf[firstPresaleContract] = _firstPresaleTokens;
-        balanceOf[secondPresaleContract] = _secondPresaleTokens;
-        balanceOf[teamVestingContract] = _teamVestingTokens;
-        balanceOf[marketingWallet] = _marketingTokens;
-        balanceOf[address(this)] = _contractTokens;
-    }
+//         uint _firstPresaleTokens =  15000000;
+//         uint _secondPresaleTokens = 15000000;
+//         uint _teamVestingTokens =   20000000;
+//         uint _marketingTokens =     15000000;
+//         uint _contractTokens = totalSupply - (_teamVestingTokens + _marketingTokens + _firstPresaleTokens + _secondPresaleTokens);
 
-    modifier onlyOwner() {
-        require(msg.sender == teamWallet, 'You must be the owner.');
-        _;
-    }
+//         balanceOf[firstPresaleContract] = _firstPresaleTokens;
+//         balanceOf[secondPresaleContract] = _secondPresaleTokens;
+//         balanceOf[teamVestingContract] = _teamVestingTokens;
+//         balanceOf[marketingWallet] = _marketingTokens;
+//         balanceOf[address(this)] = _contractTokens;
+//     }
 
-    function transfer(address _to, uint256 _value) public returns (bool success) {
-        require(balanceOf[msg.sender] >= _value);
+//     modifier onlyOwner() {
+//         require(msg.sender == teamWallet, 'You must be the owner.');
+//         _;
+//     }
 
-        balanceOf[msg.sender] -= _value;
-        balanceOf[_to] += _value;
+//     function transfer(address _to, uint256 _value) public returns (bool success) {
+//         require(balanceOf[msg.sender] >= _value);
 
-        emit Transfer(msg.sender, _to, _value);
+//         balanceOf[msg.sender] -= _value;
+//         balanceOf[_to] += _value;
 
-        return true;
-    }
+//         emit Transfer(msg.sender, _to, _value);
 
-    function allowance(address _owner, address _spender) public view virtual returns (uint256) {
-        return _allowances[_owner][_spender];
-    }
+//         return true;
+//     }
 
-    function increaseAllowance(address _spender, uint256 _addedValue) public virtual returns (bool) {
-        _approve(msg.sender, _spender, _allowances[msg.sender][_spender] + _addedValue);
+//     function allowance(address _owner, address _spender) public view virtual returns (uint256) {
+//         return _allowances[_owner][_spender];
+//     }
 
-        return true;
-    }
+//     function increaseAllowance(address _spender, uint256 _addedValue) public virtual returns (bool) {
+//         _approve(msg.sender, _spender, _allowances[msg.sender][_spender] + _addedValue);
 
-    function decreaseAllowance(address _spender, uint256 _subtractedValue) public virtual returns (bool) {
-        uint256 currentAllowance = _allowances[msg.sender][_spender];
-        require(currentAllowance >= _subtractedValue, "ERC20: decreased allowance below zero");
+//         return true;
+//     }
 
-        unchecked {
-            _approve(msg.sender, _spender, currentAllowance - _subtractedValue);
-        }
-        return true;
-    }
+//     function decreaseAllowance(address _spender, uint256 _subtractedValue) public virtual returns (bool) {
+//         uint256 currentAllowance = _allowances[msg.sender][_spender];
+//         require(currentAllowance >= _subtractedValue, "ERC20: decreased allowance below zero");
 
-    function approve(address _spender, uint256 _value) public returns (bool success) {
-        _approve(msg.sender, _spender, _value);
+//         unchecked {
+//             _approve(msg.sender, _spender, currentAllowance - _subtractedValue);
+//         }
+//         return true;
+//     }
 
-        return true;
-    }
+//     function approve(address _spender, uint256 _value) public returns (bool success) {
+//         _approve(msg.sender, _spender, _value);
 
-    function _approve(address _owner, address _spender, uint256 _amount) internal virtual {
-        require(_owner != address(0), "ERC20: approve from the zero address");
-        require(_spender != address(0), "ERC20: approve to the zero address");
+//         return true;
+//     }
 
-        _allowances[_owner][_spender] = _amount;
+//     function _approve(address _owner, address _spender, uint256 _amount) internal virtual {
+//         require(_owner != address(0), "ERC20: approve from the zero address");
+//         require(_spender != address(0), "ERC20: approve to the zero address");
 
-        emit Approval(_owner, _spender, _amount);
-    }
+//         _allowances[_owner][_spender] = _amount;
 
-    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
-        require(_value <= balanceOf[_from]);
-        require(_value <= _allowances[_from][msg.sender]);
+//         emit Approval(_owner, _spender, _amount);
+//     }
 
-        balanceOf[_from] -= _value;
-        balanceOf[_to] += _value;
-        _allowances[_from][msg.sender] -= _value;
+//     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+//         require(_value <= balanceOf[_from]);
+//         require(_value <= _allowances[_from][msg.sender]);
 
-        emit Transfer(_from, _to, _value);
+//         balanceOf[_from] -= _value;
+//         balanceOf[_to] += _value;
+//         _allowances[_from][msg.sender] -= _value;
 
-        return true;
-    }
+//         emit Transfer(_from, _to, _value);
 
-    function burn(uint256 _amount) public virtual {
-        _burn(msg.sender, _amount);
-    }
+//         return true;
+//     }
 
-    function _burn(address _account, uint256 _amount) internal virtual {
-        require(_account != address(0), '');
-        require(balanceOf[_account] >= _amount, 'tokens insuficient.');
+//     function burn(uint256 _amount) public virtual {
+//         _burn(msg.sender, _amount);
+//     }
 
-        balanceOf[_account] -= _amount;
-        totalSupply -= _amount;
+//     function _burn(address _account, uint256 _amount) internal virtual {
+//         require(_account != address(0), '');
+//         require(balanceOf[_account] >= _amount, 'tokens insuficient.');
 
-        emit Transfer(_account, address(0), _amount);
-    }
+//         balanceOf[_account] -= _amount;
+//         totalSupply -= _amount;
+
+//         emit Transfer(_account, address(0), _amount);
+//     }
     
-    function addLiquidity(uint _tokenAmount) public payable onlyOwner {
-        require(_tokenAmount > 0 || msg.value > 0, "Insufficient tokens or BNBs.");
+//     function addLiquidity(uint _tokenAmount) public payable onlyOwner {
+//         require(_tokenAmount > 0 || msg.value > 0, "Insufficient tokens or BNBs.");
         
-        _approve(address(this), address(router), _tokenAmount);
+//         _approve(address(this), address(router), _tokenAmount);
 
-        liquidityLockCooldown = block.timestamp + liquidityLockTime;
+//         liquidityLockCooldown = block.timestamp + liquidityLockTime;
 
-        router.addLiquidityETH{value: msg.value}(
-            address(this),
-            _tokenAmount,
-            0,
-            0,
-            address(this),
-            block.timestamp
-        );
-    }
+//         router.addLiquidityETH{value: msg.value}(
+//             address(this),
+//             _tokenAmount,
+//             0,
+//             0,
+//             address(this),
+//             block.timestamp
+//         );
+//     }
 
-    function removeLiquidity() public onlyOwner {
-        require(block.timestamp >= liquidityLockCooldown, "Locked");
+//     function removeLiquidity() public onlyOwner {
+//         require(block.timestamp >= liquidityLockCooldown, "Locked");
 
-        IERC20 liquidityTokens = IERC20(pancakePairAddress);
-        uint _amount = liquidityTokens.balanceOf(address(this));
-        liquidityTokens.approve(address(router), _amount);
+//         IERC20 liquidityTokens = IERC20(pancakePairAddress);
+//         uint _amount = liquidityTokens.balanceOf(address(this));
+//         liquidityTokens.approve(address(router), _amount);
 
-        router.removeLiquidityETH(
-            address(this),
-            _amount,
-            0,
-            0,
-            teamWallet,
-            block.timestamp
-        );
-    }
-}
+//         router.removeLiquidityETH(
+//             address(this),
+//             _amount,
+//             0,
+//             0,
+//             teamWallet,
+//             block.timestamp
+//         );
+//     }
+// }
