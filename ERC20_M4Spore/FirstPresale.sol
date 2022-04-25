@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.6;
-///shit-wallet-MAIN-0x241a0CAeeC24fac2CBB6D44324A83F214E216C17
+///shit-wallet-MAIN-
 // Imports
 import "./Libraries.sol";
 
@@ -8,7 +8,7 @@ contract FirstPresale is ReentrancyGuard {
     address public owner; // owner
     IERC20 public token; //  Token.
     bool private tokenAvailable = false;
-    uint public tokensPerBNB = 8000; // PLRT per BNB
+    uint public tokensPerETH = 8000; // token per BNB
     uint public ending; // sale end time
     bool public presaleStarted = false; //started or not
     address public deadWallet = 0x0000000000000000000000000000000000000000; // burn wallet for after sale
@@ -59,7 +59,7 @@ contract FirstPresale is ReentrancyGuard {
         require(invested[msg.sender] >= 0.10 ether, "Your investment should be more than 0.10 BNB.");
         require(invested[msg.sender] <= 10 ether, "Your investment cannot exceed 10 BNB.");
 
-        uint _investorTokens = msg.value * tokensPerBNB; // how many tokens they will receive
+        uint _investorTokens = msg.value * tokensPerETH; // how many tokens they will receive
         investorBalance[msg.sender] += _investorTokens;//do the swap
         withdrawableBalance[msg.sender] += _investorTokens;//update the necesary balances
         tokensSold += _investorTokens;//account for sale

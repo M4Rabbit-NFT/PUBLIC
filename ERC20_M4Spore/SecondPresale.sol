@@ -5,10 +5,10 @@ pragma solidity ^0.8.6;
 import "./Libraries.sol";
 
 contract SecondPresale is ReentrancyGuard {
-    address public owner; // owner wallet
+    address public owner; // owner multisig
     IERC20 public token; //  Token.
     bool private tokenAvailable = false;
-    uint public tokensPerBNB = 5000; // new quantity of tokens per bnb half as many as presale 1
+    uint public tokensPerETH = 5000; // new quantity of tokens per bnb half as many as presale 1
     uint public ending; // end time
     bool public presaleStarted = false; // true or false
     address public deadWallet = 0x0000000000000000000000000000000000000000; // burn Wallet.
@@ -23,7 +23,6 @@ contract SecondPresale is ReentrancyGuard {
 
     constructor(address _teamWallet) {
         owner = _teamWallet;
-
     }
 
     modifier onlyOwner() {
@@ -61,7 +60,7 @@ contract SecondPresale is ReentrancyGuard {
         require(invested[msg.sender] >= 0.10 ether, "Your investment should be more than 0.10 BNB.");
         require(invested[msg.sender] <= 10 ether, "Your investment cannot exceed 10 BNB.");
 
-        uint _investorTokens = msg.value * tokensPerBNB; // how many PLRT Token will they receive
+        uint _investorTokens = msg.value * tokensPerETH; // how many PLRT Token will they receive
         investorBalance[msg.sender] += _investorTokens;
         withdrawableBalance[msg.sender] += _investorTokens;
         tokensSold += _investorTokens;
