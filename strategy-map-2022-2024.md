@@ -1,4 +1,4 @@
-# Strategy Map 2022-2024
+# 📑 Strategy Map 2022-2024
 
 As we are sure you know by now, the NFT space is an extremely fast and ever evolving one. That is good news for both the M4Rabbit NFT project and our community, because it means that we will grow together!  And If you are reading this it means you are an early bird.\
 \
