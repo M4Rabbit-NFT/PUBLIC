@@ -1,5 +1,7 @@
 # 💰 Token Distribution
 
+![Distribution Chart by %](https://lh6.googleusercontent.com/3Nj7sqfNvHkIFBPid7ZUQd09gufOQlYnePnW54zAzKq4Y\_PSm36vKmIZoF4jcbfXJg8KxcrZbMD-1D3G5k57HhGJACH5x95ROOsg4KISVriiSIiVMmohfgfLkXXC5w)
+
 Private Vesting 15%
 
 * offered in private to whitelisted persons & NFT holders - UNSOLD BURNED&#x20;
