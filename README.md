@@ -1,9 +1,4 @@
-# Page 1
-
-M4Rabbit NFT & ERC20 Token
-
-\
-
+# M4Rabbit NFT & ERC20 Token
 
 ## Target Market:
 

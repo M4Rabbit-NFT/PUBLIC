@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Page 1](README.md)
+* [M4Rabbit NFT & ERC20 Token](README.md)
