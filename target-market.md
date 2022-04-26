@@ -1,4 +1,4 @@
-# Target Market
+# 🎯 Target Market
 
 We are targeting the entire market, both investors and standard players and users.
 
