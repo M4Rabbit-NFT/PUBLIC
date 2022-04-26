@@ -2,15 +2,29 @@
 
 ![Distribution Chart by %](https://lh6.googleusercontent.com/3Nj7sqfNvHkIFBPid7ZUQd09gufOQlYnePnW54zAzKq4Y\_PSm36vKmIZoF4jcbfXJg8KxcrZbMD-1D3G5k57HhGJACH5x95ROOsg4KISVriiSIiVMmohfgfLkXXC5w)
 
+Token Information:
+
+Name:ERC20 $Spore
+
+Identifier: M4SPR
+
+Total Supply: 10,000,000
+
+Burn Wallet:  unsold in Vested Sales rounds burned.  Dev tokens may be burned at discretion.
+
+
+
 Private Vesting 15%
 
 * offered in private to whitelisted persons & NFT holders - UNSOLD BURNED&#x20;
-*
+
+
 
 Public Vesting 15%
 
 * offered in public to everyone (through platform??) - UNSOLD BURNED
-*
+
+
 
 \
 Marketing Vested 10%
