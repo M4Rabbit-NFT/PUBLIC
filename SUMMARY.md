@@ -5,5 +5,5 @@
 * [💰 Token Distribution](token-distribution.md)
 * [🏞 Metaverse – NFT Model Economy](metaverse-nft-model-economy.md)
 * [Games](games/README.md)
-  * [Interplanetary Lottery](games/interplanetary-lottery.md)
+  * [🎟 Interplanetary Lottery](games/interplanetary-lottery.md)
   * [Page 2](games/page-2.md)

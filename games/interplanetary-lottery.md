@@ -1,4 +1,4 @@
-# Interplanetary Lottery
+# 🎟 Interplanetary Lottery
 
 What is an interplanetary Lottery?
 
