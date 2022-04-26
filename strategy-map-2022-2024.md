@@ -18,6 +18,10 @@ Our goal, to provide highly collectible artwork with a utility that gives a retu
 \
 
 
+![Visualization](.gitbook/assets/strat\_roadmap.png)
+
+
+
 M4Rabbit NFT
 
 Q1-2 2022
