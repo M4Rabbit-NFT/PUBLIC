@@ -1,17 +1,14 @@
-# Token Distribution
-
-\
-
+# 💰 Token Distribution
 
 Private Vesting 15%
 
 * offered in private to whitelisted persons & NFT holders - UNSOLD BURNED&#x20;
-
-
+*
 
 Public Vesting 15%
 
 * offered in public to everyone (through platform??) - UNSOLD BURNED
+*
 
 \
 Marketing Vested 10%
