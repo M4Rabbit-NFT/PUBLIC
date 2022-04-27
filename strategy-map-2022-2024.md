@@ -18,7 +18,7 @@ Our goal, to provide highly collectible artwork with a utility that gives a retu
 \
 
 
-![Visualization](../.gitbook/assets/strat\_roadmap.png)
+![Visualization](.gitbook/assets/strat\_roadmap.png)
 
 
 
