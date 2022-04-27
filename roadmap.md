@@ -20,14 +20,12 @@ Stage 2
 \
 
 
-Stage 3 \~500 mint&#x20;
+Stage 3 \~500 mint
 
-* Avalanch launch of "Millionaire Rabbit" NFT collection
 * Genesis collection drop and mint
 * M4 NFT & $M4Spore ERC20 token launch on ETHEREUM
 * ERC20 vesting and pre-sales rounds&#x20;
 * Platform Development / 3D / NFT Viewer
-* AVAX 2D Millionaire Rabbit Buyback to celebrate 500th M4Rabbit mint
 * Create guidelines for NFT Holders, players r.e gaming/lottery
 * Lottery / Interplanetary Clashes / PVP Battles – community decision
 

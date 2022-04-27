@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🐰 M4Rabbit NFT & ERC20 Token](README.md)
+* [🪙 M4Rabbit NFT & ERC20 Token](README.md)
 * [🛣 Roadmap](roadmap.md)
   * [📑 Strategy Map 2022-2024](strategy-map-2022-2024.md)
 * [🎯 Target Market](target-market.md)
