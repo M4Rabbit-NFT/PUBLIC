@@ -1,25 +1,21 @@
-# 🐰 M4Rabbit NFT & ERC20 Token
+# 🪙 M4Rabbit NFT & ERC20 Token
 
 ## Target Market:
 
-\
 
 
 We are targeting the entire market, both investors and standard players and users.
 
-\
 
 
 There is a strong community that buys & sells NFTs and play games online daily.
 
-\
 
 
 * There are people who play games and follow NFT projects like fans.
 * Then there are the investors who like to snap up a few thousand tokens here and there.
 * It’s highly possible someone is actively searching for an NFT that offers gifts or other incentives to hold or a PLAY to EARN BLOCKCHAIN GAME right now.
 
-\
 
 
 Why Will Crypto Investors Want to Fill their Bags with $M4Spore Tokens?
