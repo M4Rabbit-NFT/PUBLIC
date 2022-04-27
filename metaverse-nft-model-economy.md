@@ -1,4 +1,4 @@
-# 🏞 NFT Model Economy
+# 🏞 Metaverse – NFT Model Economy
 
 
 

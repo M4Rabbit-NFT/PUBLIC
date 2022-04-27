@@ -24,6 +24,8 @@ Public Vesting 15%
 
 * offered in public to everyone (through platform??) - UNSOLD BURNED
 
+
+
 \
 Marketing Vested 10%
 
