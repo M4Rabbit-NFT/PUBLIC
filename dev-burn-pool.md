@@ -8,14 +8,9 @@ All we can say for sure is that we have the potential along with our community t
 \
 &#x20;              &#x20;
 
+<img src=".gitbook/assets/image.png" alt="" data-size="line">  :-  "If this project doesnt bring life changing gains to at least two
 
+&#x20;             independant HODLERS, I will print the collection on A4 and eat them!"&#x20;
 
-&#x20;               "If this project doesnt bring life changing gains to at&#x20;
-
-&#x20;          least two independant HODLERS, I will print the collection
-
-&#x20;               on A4 and eat them!"&#x20;
-
-&#x20;                         \- MacGuyver, Lead Dev, Web3/Solidity/Node.\
+&#x20;                               \- MacGuyver, Lead Dev, Web3/Solidity/Node.\
 \
-<img src=".gitbook/assets/image (1).png" alt="" data-size="line">
