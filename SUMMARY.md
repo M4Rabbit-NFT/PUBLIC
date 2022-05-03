@@ -11,3 +11,5 @@
 * [🕹 Games](games/README.md)
   * [🎟 Interplanetary Lottery](games/interplanetary-lottery.md)
   * [🏴☠ Interplanetary Clashes](games/interplanetary-clashes.md)
+* [💵 Discount Pass](discount-pass/README.md)
+  * [❄ Avalanche Utility Pass](discount-pass/avalanche-utility-pass.md)
