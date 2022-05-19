@@ -78,13 +78,19 @@ Stage 5&#x20;
 * M4Spore NFT / free mint catalyst for mutations&#x20;
 * Marketing / mega incentives / Publicity
 
-
-
 Final Stage of road map 1.0, map 2.0 beginning:
 
 * Release the MutantZ - M4MutantZ released
 
+
+
+
+
 Note:Throughout all stages there is a constantly unfolding sci-fi story that is being written about M4 by our team of professional writers.
+
+
+
+
 
 Marketing strategy.&#x20;
 
@@ -102,9 +108,7 @@ Director of NVC media inc. VFX/CGI supervisor for the film and video game indust
 
 
 
-Continuous utility - use the spore token to build out your LAB NFT and showcase your M4 RABBIT in your LABORATORY!  Private Market for M4 Rabbit accessories and M4 NFTs.
-
-\
+Continuous utility - use the spore token to build out your LAB NFT and showcase your M4 RABBIT in your LABORATORY!  Private Market for M4 Rabbit accessories and M4 NFTs.\
 
 
 ## Token Information:
@@ -129,7 +133,6 @@ Burn Wallet:  unsold in Vested Sales rounds burned.  Dev tokens may be burned at
 
 ## ETHEREUM NET ERC20 Token Distribution:
 
-\
 
 
 Staking/Liquidity 30%
@@ -142,25 +145,17 @@ Gaming/Rewards 20%
 
 * tokens are placed in a locker for the use in gaming rewards and platform giveaways – locker contract needs majority M4 NFT holder vote to move tokens….
 
-
-
 Private Vesting 15%
 
 * offered in private to whitelisted persons & NFT holders - UNSOLD BURNED&#x20;
-
-
 
 Public Vesting 15%
 
 * offered in public to everyone (through platform??) - UNSOLD BURNED
 
-
-
 Marketing Vested 10%
 
 * a specific wallet that will be used to run marketing and ad influencer campaigns to draw attention to project and gaming as they launch. 10% every 30 days
-
-
 
 Dev/Treasury unlocked 10%
 
@@ -266,8 +261,6 @@ CONSTANT ECONOMY To rewards Expected FROM:
 ## Games
 
 Interplanetary Lottery
-
-
 
 What is an interplanetary Lottery?
 
