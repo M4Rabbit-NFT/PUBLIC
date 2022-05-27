@@ -1,170 +1,266 @@
-//COMMENTED BECAUSE WE WILL USE A FACTORY CONTRACT TO DEPLOY THUS THIS CONTRACT IS NULL
+//SPDX-License-Identifier: MIT
 
-//THE TOKENS WILL BE MINTED TO A GNOSIS SAFE MULTISIG WALLET FOR 
-//DISTRIBUTION TO THE OTHER CONTRACTS MANUALLY
-// // SPDX-License-Identifier: MIT
-// pragma solidity ^0.8.6;
-// //testnet router: https://pancake.kiemtienonline360.com/- 0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3 
-// s
-// import "./Libraries.sol";
 
-// contract PLRToken {
-//     string public name = "M4Spore Token";
-//     string public symbol = "M4SPR";
-//     uint256 public totalSupply = 10000000; // 10 millon
-//     uint8 public decimals = 2;
-//     address public teamWallet; // owner
-//     address public marketingWallet; // marketing
-//     address private firstPresaleContract; // first presale address
-//     address private secondPresaleContract; // second presale address
-//     address private teamVestingContract; // team vesting contract
-//     IUniswapV2Router02 router; // Router.
-//     address private pancakePairAddress; // the pancakeswap pair address.
-//     uint public liquidityLockTime = 0 days; // how long do we lock up liquidity
-//     uint public liquidityLockCooldown;// cooldown period for changes to liquidity settings and removal
+pragma solidity 0.8.14;
 
-//     mapping(address => uint256) public balanceOf;
-//     mapping(address => mapping(address => uint256)) private _allowances;
+abstract contract Context {
+    function _msgSender() internal view virtual returns (address) {
+        return msg.sender;
+    }
 
-//     event Transfer(address indexed _from, address indexed _to, uint256 _value);
-//     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
+    function _msgData() internal view virtual returns (bytes calldata) {
+        return msg.data;
+    }
+}
 
-//     constructor(
-//         address _teamWallet, 
-//         address _marketingWallet, 
-//         address _firstPresaleContract, 
-//         address _secondPresaleContract, 
-//         address _teamVestingContract) {
-//         teamWallet = _teamWallet;
-//         marketingWallet = _marketingWallet;
-//         firstPresaleContract = _firstPresaleContract;
-//         secondPresaleContract = _secondPresaleContract;
-//         teamVestingContract = _teamVestingContract;
-//         router = IUniswapV2Router02(0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3);//router address for pair creation
-//         pancakePairAddress = IPancakeFactory(router.factory()).createPair(address(this), router.WETH());
+pragma solidity 0.8.14;
 
-//         uint _firstPresaleTokens =  15000000;
-//         uint _secondPresaleTokens = 15000000;
-//         uint _teamVestingTokens =   20000000;
-//         uint _marketingTokens =     15000000;
-//         uint _contractTokens = totalSupply - (_teamVestingTokens + _marketingTokens + _firstPresaleTokens + _secondPresaleTokens);
+/**
+ * @dev Interface of the ERC20 standard as defined in the EIP.
+ */
+interface IERC20 {
+    /**
+     * @dev Returns the amount of tokens in existence.
+     */
+    function totalSupply() external view returns (uint256);
 
-//         balanceOf[firstPresaleContract] = _firstPresaleTokens;
-//         balanceOf[secondPresaleContract] = _secondPresaleTokens;
-//         balanceOf[teamVestingContract] = _teamVestingTokens;
-//         balanceOf[marketingWallet] = _marketingTokens;
-//         balanceOf[address(this)] = _contractTokens;
-//     }
+    /**
+     * @dev Returns the amount of tokens owned by `account`.
+     */
+    function balanceOf(address account) external view returns (uint256);
 
-//     modifier onlyOwner() {
-//         require(msg.sender == teamWallet, 'You must be the owner.');
-//         _;
-//     }
+    /**
+     * @dev Moves `amount` tokens from the caller's account to `recipient`.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transfer(address recipient, uint256 amount) external returns (bool);
 
-//     function transfer(address _to, uint256 _value) public returns (bool success) {
-//         require(balanceOf[msg.sender] >= _value);
+    /**
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
+     *
+     * This value changes when {approve} or {transferFrom} are called.
+     */
+    function allowance(address owner, address spender) external view returns (uint256);
 
-//         balanceOf[msg.sender] -= _value;
-//         balanceOf[_to] += _value;
+    function approve(address spender, uint256 amount) external returns (bool);
 
-//         emit Transfer(msg.sender, _to, _value);
+ 
+    function transferFrom(
+        address sender,
+        address recipient,
+        uint256 amount
+    ) external returns (bool);
 
-//         return true;
-//     }
+    event Transfer(address indexed from, address indexed to, uint256 value);
 
-//     function allowance(address _owner, address _spender) public view virtual returns (uint256) {
-//         return _allowances[_owner][_spender];
-//     }
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+}
 
-//     function increaseAllowance(address _spender, uint256 _addedValue) public virtual returns (bool) {
-//         _approve(msg.sender, _spender, _allowances[msg.sender][_spender] + _addedValue);
+pragma solidity 0.8.14;
 
-//         return true;
-//     }
 
-//     function decreaseAllowance(address _spender, uint256 _subtractedValue) public virtual returns (bool) {
-//         uint256 currentAllowance = _allowances[msg.sender][_spender];
-//         require(currentAllowance >= _subtractedValue, "ERC20: decreased allowance below zero");
+interface IERC20Metadata is IERC20 {
+    /**
+     * @dev Returns the name of the token.
+     */
+    function name() external view returns (string memory);
 
-//         unchecked {
-//             _approve(msg.sender, _spender, currentAllowance - _subtractedValue);
-//         }
-//         return true;
-//     }
+    /**
+     * @dev Returns the symbol of the token.
+     */
+    function symbol() external view returns (string memory);
 
-//     function approve(address _spender, uint256 _value) public returns (bool success) {
-//         _approve(msg.sender, _spender, _value);
+    /**
+     * @dev Returns the decimals places of the token.
+     */
+    function decimals() external view returns (uint8);
+}
 
-//         return true;
-//     }
 
-//     function _approve(address _owner, address _spender, uint256 _amount) internal virtual {
-//         require(_owner != address(0), "ERC20: approve from the zero address");
-//         require(_spender != address(0), "ERC20: approve to the zero address");
 
-//         _allowances[_owner][_spender] = _amount;
+pragma solidity 0.8.14;
 
-//         emit Approval(_owner, _spender, _amount);
-//     }
 
-//     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
-//         require(_value <= balanceOf[_from]);
-//         require(_value <= _allowances[_from][msg.sender]);
+contract ERC20 is Context, IERC20, IERC20Metadata {
+    mapping(address => uint256) private _balances;
 
-//         balanceOf[_from] -= _value;
-//         balanceOf[_to] += _value;
-//         _allowances[_from][msg.sender] -= _value;
+    mapping(address => mapping(address => uint256)) private _allowances;
 
-//         emit Transfer(_from, _to, _value);
+    uint256 private _totalSupply;
 
-//         return true;
-//     }
+    string private _name;
+    string private _symbol;
 
-//     function burn(uint256 _amount) public virtual {
-//         _burn(msg.sender, _amount);
-//     }
+    constructor(string memory name_, string memory symbol_) {
+        _name = name_;
+        _symbol = symbol_;
+    }
 
-//     function _burn(address _account, uint256 _amount) internal virtual {
-//         require(_account != address(0), '');
-//         require(balanceOf[_account] >= _amount, 'tokens insuficient.');
+    function name() public view virtual override returns (string memory) {
+        return _name;
+    }
+    function symbol() public view virtual override returns (string memory) {
+        return _symbol;
+    }
+    function decimals() public view virtual override returns (uint8) {
+        return 18;
+    }
 
-//         balanceOf[_account] -= _amount;
-//         totalSupply -= _amount;
+    /**
+     * @dev See {IERC20-totalSupply}.
+     */
+    function totalSupply() public view virtual override returns (uint256) {
+        return _totalSupply;
+    }
 
-//         emit Transfer(_account, address(0), _amount);
-//     }
-    
-//     function addLiquidity(uint _tokenAmount) public payable onlyOwner {
-//         require(_tokenAmount > 0 || msg.value > 0, "Insufficient tokens or BNBs.");
-        
-//         _approve(address(this), address(router), _tokenAmount);
+    /**
+     * @dev See {IERC20-balanceOf}.
+     */
+    function balanceOf(address account) public view virtual override returns (uint256) {
+        return _balances[account];
+    }
 
-//         liquidityLockCooldown = block.timestamp + liquidityLockTime;
+    function transfer(address recipient, uint256 amount) public virtual override returns (bool) {
+        _transfer(_msgSender(), recipient, amount);
+        return true;
+    }
 
-//         router.addLiquidityETH{value: msg.value}(
-//             address(this),
-//             _tokenAmount,
-//             0,
-//             0,
-//             address(this),
-//             block.timestamp
-//         );
-//     }
+    function allowance(address owner, address spender) public view virtual override returns (uint256) {
+        return _allowances[owner][spender];
+    }
 
-//     function removeLiquidity() public onlyOwner {
-//         require(block.timestamp >= liquidityLockCooldown, "Locked");
+    function approve(address spender, uint256 amount) public virtual override returns (bool) {
+        _approve(_msgSender(), spender, amount);
+        return true;
+    }
 
-//         IERC20 liquidityTokens = IERC20(pancakePairAddress);
-//         uint _amount = liquidityTokens.balanceOf(address(this));
-//         liquidityTokens.approve(address(router), _amount);
+    function transferFrom(
+        address sender,
+        address recipient,
+        uint256 amount
+    ) public virtual override returns (bool) {
+        _transfer(sender, recipient, amount);
 
-//         router.removeLiquidityETH(
-//             address(this),
-//             _amount,
-//             0,
-//             0,
-//             teamWallet,
-//             block.timestamp
-//         );
-//     }
-// }
+        uint256 currentAllowance = _allowances[sender][_msgSender()];
+        require(currentAllowance >= amount, "ERC20: transfer amount exceeds allowance");
+        unchecked {
+            _approve(sender, _msgSender(), currentAllowance - amount);
+        }
+
+        return true;
+    }
+
+    function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {
+        _approve(_msgSender(), spender, _allowances[_msgSender()][spender] + addedValue);
+        return true;
+    }
+
+    function decreaseAllowance(address spender, uint256 subtractedValue) public virtual returns (bool) {
+        uint256 currentAllowance = _allowances[_msgSender()][spender];
+        require(currentAllowance >= subtractedValue, "ERC20: decreased allowance below zero");
+        unchecked {
+            _approve(_msgSender(), spender, currentAllowance - subtractedValue);
+        }
+
+        return true;
+    }
+
+    function _transfer(
+        address sender,
+        address recipient,
+        uint256 amount
+    ) internal virtual {
+        require(sender != address(0), "ERC20: transfer from the zero address");
+        require(recipient != address(0), "ERC20: transfer to the zero address");
+
+        _beforeTokenTransfer(sender, recipient, amount);
+
+        uint256 senderBalance = _balances[sender];
+        require(senderBalance >= amount, "ERC20: transfer amount exceeds balance");
+        unchecked {
+            _balances[sender] = senderBalance - amount;
+        }
+        _balances[recipient] += amount;
+
+        emit Transfer(sender, recipient, amount);
+
+        _afterTokenTransfer(sender, recipient, amount);
+    }
+
+    function _mint(address account, uint256 amount) internal virtual {
+        require(account != address(0), "ERC20: mint to the zero address");
+
+        _beforeTokenTransfer(address(0), account, amount);
+
+        _totalSupply += amount;
+        _balances[account] += amount;
+        emit Transfer(address(0), account, amount);
+
+        _afterTokenTransfer(address(0), account, amount);
+    }
+
+    function _burn(address account, uint256 amount) internal virtual {
+        require(account != address(0), "ERC20: burn from the zero address");
+
+        _beforeTokenTransfer(account, address(0), amount);
+
+        uint256 accountBalance = _balances[account];
+        require(accountBalance >= amount, "ERC20: burn amount exceeds balance");
+        unchecked {
+            _balances[account] = accountBalance - amount;
+        }
+        _totalSupply -= amount;
+
+        emit Transfer(account, address(0), amount);
+
+        _afterTokenTransfer(account, address(0), amount);
+    }
+
+    function _approve(
+        address owner,
+        address spender,
+        uint256 amount
+    ) internal virtual {
+        require(owner != address(0), "ERC20: approve from the zero address");
+        require(spender != address(0), "ERC20: approve to the zero address");
+
+        _allowances[owner][spender] = amount;
+        emit Approval(owner, spender, amount);
+    }
+
+    function _beforeTokenTransfer(
+        address from,
+        address to,
+        uint256 amount
+    ) internal virtual {}
+
+    function _afterTokenTransfer(
+        address from,
+        address to,
+        uint256 amount
+    ) internal virtual {}
+}
+pragma solidity ^0.8.14;
+
+
+contract SimpleToken is ERC20 {
+
+    constructor(
+        string memory name,
+        string memory symbol,
+        uint256 totalSupply_
+    ) ERC20(name, symbol) {
+        _mint(msg.sender, totalSupply_ * 10 ** 18);
+    }
+
+}
+//updated 27/5/2022  MacGuyver  LFG!!!!
