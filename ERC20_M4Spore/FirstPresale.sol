@@ -26,7 +26,7 @@ abstract contract ReentrancyGuard {
 // import "./Libraries.sol";
 
 contract FirstPresale is ReentrancyGuard {
-    address public owner = 0xBEED5427b0E728AC7EfAaD279c51d511472f9ee2; // owner
+    address public owner; // owner
     IERC20 public token; //  Token.
     bool private tokenAvailable = false;
     uint public tokensPerETH = 35000; // token per ETH
