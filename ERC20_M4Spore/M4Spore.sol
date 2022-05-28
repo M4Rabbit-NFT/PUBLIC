@@ -264,3 +264,5 @@ contract SimpleToken is ERC20 {
 
 }
 //updated 27/5/2022  MacGuyver  LFG!!!!
+VERIFIED CONTRACT
+https://etherscan.io/address/0x34fee42698a94c7c6aa5ff674dcc26655ee9990c#code
