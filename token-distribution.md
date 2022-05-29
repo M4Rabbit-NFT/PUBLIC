@@ -10,9 +10,13 @@ Identifier: M4SPORE
 
 Total Supply: 10,000,000
 
+DECIMALS: 18
+
 CONTRACT: [https://etherscan.io/address/0x34fee42698a94c7c6aa5ff674dcc26655ee9990c#code](https://etherscan.io/address/0x34fee42698a94c7c6aa5ff674dcc26655ee9990c#code)
 
 Burn Wallet:  unsold in Vested Sales rounds burned.  Dev tokens may be burned at discretion.
+
+
 
 Staking/Liquidity 30% (3,000,000 M4Spore Tokens)
 
@@ -20,16 +24,23 @@ Staking/Liquidity 30% (3,000,000 M4Spore Tokens)
 
 
 
+M4Rabbit NFT HOLDER Rewards 20% (2,00,000 M4Spore Tokens)
+
+* These tokens are only available to M$Rabbit NFT HOLDERS
+* Prizes, give aways and other rewards, community purchases etc
+
+
+
 Private Sale WL vesting 15% (1,500,000 M4Spore Tokens)
 
-* offered in private to whitelisted persons & NFT holders -&#x20;
+* offered in private to whitelisted persons & NFT holders - $0.05
 * UNSOLD BURNED 10% released every 10 days
 
 
 
 Public Vesting 15% (1,500,000 M4Spore Tokens)
 
-* offered in public to everyone -
+* offered in public to everyone - $0.10
 * &#x20;UNSOLD BURNED 10% released every 7 days
 
 \
