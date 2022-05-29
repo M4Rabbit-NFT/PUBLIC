@@ -4,9 +4,9 @@
 
 Token Information:
 
-Name:ERC20 $Spore
+Name:ERC20 $M4Spore
 
-Identifier: M4SPR
+Identifier: M4SPORE
 
 Total Supply: 10,000,000
 
