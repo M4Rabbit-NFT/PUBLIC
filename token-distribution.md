@@ -10,37 +10,44 @@ Identifier: M4SPR
 
 Total Supply: 10,000,000
 
+CONTRACT: [https://etherscan.io/address/0x34fee42698a94c7c6aa5ff674dcc26655ee9990c#code](https://etherscan.io/address/0x34fee42698a94c7c6aa5ff674dcc26655ee9990c#code)
+
 Burn Wallet:  unsold in Vested Sales rounds burned.  Dev tokens may be burned at discretion.
 
 
 
-Private Vesting 15%
+Private Sale WL vesting 15%
 
-* offered in private to whitelisted persons & NFT holders - UNSOLD BURNED&#x20;
+* offered in private to whitelisted persons & NFT holders -&#x20;
+* UNSOLD BURNED 10% released every 10 days
 
 
 
 Public Vesting 15%
 
-* offered in public to everyone (through platform??) - UNSOLD BURNED
-
-
+* offered in public to everyone -
+* &#x20;UNSOLD BURNED 10% released every 7 days
 
 \
 Marketing Vested 10%
 
-* a specific wallet that will be used to run marketing and ad influencer campaigns to draw attention to project and gaming as they launch. 10% every 30 days
+* a specific wallet that will be used to run marketing and ad influencer campaigns to draw attention to project and gaming as they launch.&#x20;
+* 5% released every 7 days
 
 
 
 Dev/Treasury unlocked 10%
 
-* available straight away this is basically what is used by the team for development costs and to pay for other devs or new team members ad-hoc.
+* available straight away this is basically what is used by the team for rewards, incentives, giveaways, testing, development costs and to pay for other devs or new team members ad-hoc.
 
 
 
-Between private holders, Burn and liquidity there are in total 60% of ALL Tokens
+Between private holders, Burn and liquidity there are in total 60% (6 Million) of ALL Tokens
 
-A further 20%  of Total Tokens can only be rewarded to M4 NFT Holders.
+A further 20%  (2 Million) of Total Tokens can only be rewarded to M4 NFT Holders.
 
-Of the remaining 20% HALF locked at 10% every 30 days and 10% unlocked.
+Of the remaining 20% (2 Million) HALF (1 Million) locked at 5% every 7 days and 10% (1 Million) unlocked.
+
+
+
+TOKENS CAN BE CLAIMED FROM THE END OF THE EACH SALE AND TIME RESETS EACH CLAIM
