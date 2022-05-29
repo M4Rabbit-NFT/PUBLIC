@@ -1,21 +1,39 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.6;
 
-// Imports
-import "./Libraries.sol";
-//we put the team funds in here so the people see we cant take and trade or
-//sell all at once just like them we cant act as a whale
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.14;
+
+/**
+ * @dev Contract module that helps prevent reentrant calls to a function.
+ */
+abstract contract ReentrancyGuard {
+
+    uint256 private constant _NOT_ENTERED = 1;
+    uint256 private constant _ENTERED = 2;
+
+    uint256 private _status;
+
+    constructor() {
+        _status = _NOT_ENTERED;
+    }
+
+    modifier nonReentrant() {
+        require(_status != _ENTERED, "ReentrancyGuard: reentrant call");
+        _status = _ENTERED;
+        _;
+        _status = _NOT_ENTERED;
+    }
+}
+
 contract TeamVesting is ReentrancyGuard {
     IERC20 public token;
-    address public teamWallet; // team wallet
-    uint public cooldownTime = 0 days; // cooldown time
+    address public teamWallet = 00000000000000000000; // team wallet
+    uint256 private balance;   
+    uint public cooldownTime = 7 days; // cooldown time
     uint public claimReady; //save claim  time
     bool private tokenAvailable = false;
-    uint public initialContractBalance; // Initial contract balance.
-    bool private initialized; // Checks if the variable initializedContractBalance has been defined.
-
-    constructor(address _teamWallet) {
-        teamWallet = _teamWallet;
+    uint public initialContractBalance = 500000*10**18; 
+    constructor() {
+         
     }
 
     modifier onlyOwner() {
@@ -45,11 +63,6 @@ contract TeamVesting is ReentrancyGuard {
         require(claimReady <= block.timestamp, "You can't claim now.");
         require(token.balanceOf(address(this)) > 0, "Insufficient Balance.");
 
-        if(!initialized) {
-            initialContractBalance = token.balanceOf(address(this));
-            initialized = true;
-        }
-
         uint _withdrawableBalance = mulScale(initialContractBalance, 1000, 10000); // 1000 basis points = 10%.
 
         if(token.balanceOf(address(this)) <= _withdrawableBalance) {
@@ -60,4 +73,28 @@ contract TeamVesting is ReentrancyGuard {
             token.transfer(teamWallet, _withdrawableBalance); 
         }
     }
+
+    receive() external payable{
+        balance += msg.value;
+    }
+
+    fallback() external payable{
+        balance += msg.value;
+    }
+
 }
+
+interface IERC20 {
+    function decimals() external view returns (uint256);
+    function totalSupply() external view returns (uint256);
+    function balanceOf(address account) external view returns (uint256);
+    function transfer(address recipient, uint256 amount) external returns (bool);
+    function allowance(address owner, address spender) external view returns (uint256);
+    function approve(address spender, uint256 amount) external returns (bool);
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+    function onERC20Received(address _operator, address _from, uint256 _value, bytes calldata _data) external returns(bytes4);
+}
+VERIFIED CONTRACT
+https://etherscan.io/address/0xd4550a2e76ca557c1dd638fa5f3e3ee4545610ea#writeContract
