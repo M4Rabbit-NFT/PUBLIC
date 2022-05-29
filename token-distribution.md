@@ -14,29 +14,33 @@ CONTRACT: [https://etherscan.io/address/0x34fee42698a94c7c6aa5ff674dcc26655ee999
 
 Burn Wallet:  unsold in Vested Sales rounds burned.  Dev tokens may be burned at discretion.
 
+Staking/Liquidity 30% (3,000,000 M4Spore Tokens)
+
+* Tokens reserved for Staking/liquidity pool
 
 
-Private Sale WL vesting 15%
+
+Private Sale WL vesting 15% (1,500,000 M4Spore Tokens)
 
 * offered in private to whitelisted persons & NFT holders -&#x20;
 * UNSOLD BURNED 10% released every 10 days
 
 
 
-Public Vesting 15%
+Public Vesting 15% (1,500,000 M4Spore Tokens)
 
 * offered in public to everyone -
 * &#x20;UNSOLD BURNED 10% released every 7 days
 
 \
-Marketing Vested 10%
+Marketing Vested 10% (1,000,000 M4Spore Tokens)
 
 * a specific wallet that will be used to run marketing and ad influencer campaigns to draw attention to project and gaming as they launch.&#x20;
 * 5% released every 7 days
 
 
 
-Dev/Treasury unlocked 10%
+Dev/Treasury unlocked 10% (1,000,000 M4Spore Tokens)
 
 * available straight away this is basically what is used by the team for rewards, incentives, giveaways, testing, development costs and to pay for other devs or new team members ad-hoc.
 
