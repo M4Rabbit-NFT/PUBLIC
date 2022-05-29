@@ -146,12 +146,6 @@ contract FirstPresale is ReentrancyGuard {
         require(block.timestamp > ending, "Presale must have finished.");        
         uint _burnBalance = ContractBalance - tokensSold;
         token.transfer(deadWallet, _burnBalance);
-    }
-    
-    function purgeBadToken(IERC20 badToken, address _dest) public {
-        uint256 BadTokenBalance = badToken.balanceOf(address(this));
-        badToken.transfer(_dest, BadTokenBalance);
-    } 
 
     function BalanceOut() public onlyOwner {
         uint _Balance = address(this).balance;
