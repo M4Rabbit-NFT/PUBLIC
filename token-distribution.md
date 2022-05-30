@@ -56,14 +56,14 @@ Marketing Vested 10% (1,000,000 M4Spore Tokens)
 
 * a specific wallet that will be used to run marketing and ad influencer campaigns to draw attention to project and gaming as they launch.&#x20;
 * 5% released every 7 days
-* now at[ ](https://etherscan.io/address/0x4e76d9ad7bd91b079d9a691a2c9afc1ef19728b3#code)eth:[0xd4550a2e76ca557c1dd638fa5f3e3ee4545610ea](https://etherscan.io/address/0xd4550a2e76ca557c1dd638fa5f3e3ee4545610ea#code) Open Public sales contract
+* now at[ ](https://etherscan.io/address/0x4e76d9ad7bd91b079d9a691a2c9afc1ef19728b3#code)eth:[0xd4550a2e76ca557c1dd638fa5f3e3ee4545610ea](https://etherscan.io/address/0xd4550a2e76ca557c1dd638fa5f3e3ee4545610ea#code)  Team Vesting Contract
 
 
 
 Dev/Treasury unlocked 10% (1,000,000 M4Spore Tokens)
 
-* available straight away this is basically what is used by the team for rewards, incentives, giveaways, testing, development costs and to pay for other devs or new team members ad-hoc.
-* split between dev and project marketing wallets:\
+* available to the Dev team straight away this is basically what is used by the team for rewards, incentives, giveaways, testing, development costs and to pay for other devs or new team members ad-hoc.
+* 500,000 each split between dev and project marketing wallets:\
   [0x34FeE42698a94C7c6aa5FF674dCC26655Ee9990c](https://etherscan.io/token/0x34fee42698a94c7c6aa5ff674dcc26655ee9990c?a=0xbeed5427b0e728ac7efaad279c51d511472f9ee2)
 * [0x65db3ffcf5f4da01095302b5418a6f12173658f2](https://etherscan.io/token/0x34fee42698a94c7c6aa5ff674dcc26655ee9990c?a=0x65db3ffcf5f4da01095302b5418a6f12173658f2)
 
@@ -73,7 +73,7 @@ Between private holders, Burn and liquidity there are in total 60% (6 Million) o
 
 ![](.gitbook/assets/image.png)
 
-A further 20%  (2 Million) of Total Tokens can only be rewarded to M4 NFT Holders and those who bought M4Spore in Private WL Sale.
+A further 20%  (2 Million) of Total Tokens can only be rewarded to M4 NFT Holders and those who bought M4Spore ERC20 Tokens in Private WL Sale.
 
 Of the remaining 20% (2 Million) HALF (1 Million) locked at 5% every 7 days and 10% (1 Million) unlocked.
 
