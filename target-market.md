@@ -11,7 +11,7 @@ There is a strong community that buys & sells NFTs and play games online daily b
 \
 Why Will Crypto Investors Want to Fill their Bags with $M4Spore Tokens?
 
-The $M4Spore ERC20 token will be integrated within the platform in various ways and in each of these ways in order to function there will be a fees system.  This fees system is linked directly to extra incentives and gifts available via games with rewards up to $2000.00 in value that are free to enter and win for NFT holders and early token adopters.
+The $M4Spore ERC20 token will be integrated within the platform in various ways and in each of these ways in order to function there will be a fees system.  This fees system is linked directly to extra incentives and gifts available via games, some with rewards up to $2500.00 in value that are free to enter and win for NFT holders and early token adopters.
 
 * Scenario 1: The $M4Spore Token itself will be used as internal currency for the platform to buy and sell NFT’s in the marketplace after initial sales and for all future releases from M4 Project.&#x20;
 * Scenario 2: Users can win $M4Spore ERC20 tokens in their wallet and exchange them for other crypto as well as use them in the M4 Metaverse and in games.

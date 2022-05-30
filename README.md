@@ -4,7 +4,7 @@ description: Exceptional 3D Art - 4 Factions - 18 unique styles - battle traits!
 
 # 🪙 M4Rabbit NFT & ERC20 Token
 
-## ![](.gitbook/assets/image.png)
+## ![](<.gitbook/assets/image (1).png>)
 
 ## Target Market:
 
