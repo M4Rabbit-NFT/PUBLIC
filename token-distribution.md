@@ -42,7 +42,7 @@ Private Sale WL vesting 15% (1,500,000 M4Spore Tokens)
 * offered in private to whitelisted persons & NFT holders - $0.05
 * UNSOLD BURNED 10% released every 10 days
 * now at[ eth:0xD3B9A7b1693622FD6423c43F0cf431d3F0746387](https://etherscan.io/address/0xd3b9a7b1693622fd6423c43f0cf431d3f0746387#writeContract) WhiteListed sales contract
-* Private Whitelist Sale Details [https://m4spore.m4rabbit.io ](https://m4spore.m4rabbit.io)
+* Private Whitelist Sale Details [https://spore.m4rabbit.io ](https://spore.m4rabbit.io)
 
 
 
@@ -51,7 +51,7 @@ Public Vesting 15% (1,500,000 M4Spore Tokens)
 * offered in public to everyone - $0.10
 * &#x20;UNSOLD BURNED 10% released every 7 days
 * now at[ ](https://etherscan.io/address/0x4e76d9ad7bd91b079d9a691a2c9afc1ef19728b3#code)eth:[0x4e76d9ad7bd91b079d9a691a2c9afc1ef19728b3](https://etherscan.io/address/0x4e76d9ad7bd91b079d9a691a2c9afc1ef19728b3#code)                 Open Public sales contract
-* Public Sale Details [https://m4spore.m4rabbit.io ](https://m4spore.m4rabbit.io)
+* Public Sale Details [https://spore.m4rabbit.io ](https://spore.m4rabbit.io)
 
 \
 Marketing Vested 10% (1,000,000 M4Spore Tokens)
