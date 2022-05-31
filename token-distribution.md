@@ -51,6 +51,7 @@ Public Vesting 15% (1,500,000 M4Spore Tokens)
 * offered in public to everyone - $0.10
 * &#x20;UNSOLD BURNED 10% released every 7 days
 * now at[ ](https://etherscan.io/address/0x4e76d9ad7bd91b079d9a691a2c9afc1ef19728b3#code)eth:[0x4e76d9ad7bd91b079d9a691a2c9afc1ef19728b3](https://etherscan.io/address/0x4e76d9ad7bd91b079d9a691a2c9afc1ef19728b3#code)                 Open Public sales contract
+* Public Sale Details [https://m4spore.m4rabbit.io ](https://m4spore.m4rabbit.io)
 
 \
 Marketing Vested 10% (1,000,000 M4Spore Tokens)
