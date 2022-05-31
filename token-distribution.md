@@ -42,6 +42,7 @@ Private Sale WL vesting 15% (1,500,000 M4Spore Tokens)
 * offered in private to whitelisted persons & NFT holders - $0.05
 * UNSOLD BURNED 10% released every 10 days
 * now at[ eth:0xD3B9A7b1693622FD6423c43F0cf431d3F0746387](https://etherscan.io/address/0xd3b9a7b1693622fd6423c43f0cf431d3f0746387#writeContract) WhiteListed sales contract
+* Private Whitelist Sale Details
 
 
 
