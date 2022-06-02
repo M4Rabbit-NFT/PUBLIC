@@ -65,9 +65,9 @@ Marketing Vested 10% (1,000,000 M4Spore Tokens)
 Dev/Treasury unlocked 10% (1,000,000 M4Spore Tokens)
 
 * available to the Dev team straight away this is basically what is used by the team for rewards, incentives, giveaways, testing, development costs and to pay for other devs or new team members ad-hoc.
-* 500,000 each split between dev and project marketing wallets:\
-  [0x34FeE42698a94C7c6aa5FF674dCC26655Ee9990c](https://etherscan.io/token/0x34fee42698a94c7c6aa5ff674dcc26655ee9990c?a=0xbeed5427b0e728ac7efaad279c51d511472f9ee2)
-* [0x65db3ffcf5f4da01095302b5418a6f12173658f2](https://etherscan.io/token/0x34fee42698a94c7c6aa5ff674dcc26655ee9990c?a=0x65db3ffcf5f4da01095302b5418a6f12173658f2)
+* 500,000 each split between dev and project marketing wallets:
+* [m4rabbit.eth](https://etherscan.io/enslookup-search?search=m4rabbit.eth)
+* [m4rabbit-dev.eth](https://etherscan.io/enslookup-search?search=m4rabbit-dev.eth)
 
 
 
