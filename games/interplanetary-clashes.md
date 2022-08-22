@@ -2,7 +2,7 @@
 description: CLASH WITH OTHER LAND OWNERS AND STAKERS TO WIN ERC20 DAILY
 ---
 
-# 🏴☠ OCCUPY VALLARA
+# 🏴☠ Occupy Vallara
 
 OCCUPY VALLARA IS A BATTLE SHIPS TYPE MECHANIC COVERING THE ENTIRE SURFACE OF VALLARA
 
@@ -16,7 +16,7 @@ To play you will need to fit one of the following profiles
 
 2\. Form a GUILD with others of your FACTION to fit profile 1 above
 
-3\. HOLD a Sacred Site NFT and sufficient M4Spore to populate your site.  You will need at least 1 x M4 NFT and 4 x LAND NFTs of the same faction and you can replace the remaining 20 blocks with an M4Spore stake in order to play equal to 100 M4Spore for every block you cant populate + 7%.
+3\. HOLD a Sacred Site NFT and sufficient M4Spore to populate your site.  You will need at least 1 x M4 NFT and 4 x LAND NFTs of the same faction and you can replace the remaining 20 blocks with an M4Spore stake in order to play equal to 100 M4Spore for every line of the block you cant populate + 7%.
 
 A new Sacred Sites NFT can be claimed by any one person or group/GUILD holding 5 x M4 NFTs and 20 x LAND NFTs of the same FACTION\
 
