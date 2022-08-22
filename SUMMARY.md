@@ -10,7 +10,7 @@
   * [🔥 Dev/Burn Pool](dev-burn-pool.md)
 * [🕹 Games](games/README.md)
   * [🎟 Interplanetary Lottery](games/interplanetary-lottery.md)
-  * [🏴☠ OCCUPY VALLARA](games/occupy-vallara.md)
+  * [🏴☠ OCCUPY VALLARA](games/interplanetary-clashes.md)
 * [💵 Discount Pass](discount-pass/README.md)
   * [❄ Avalanche Utility Pass](discount-pass/avalanche-utility-pass.md)
   * [Millionaire Rabbit M4 Utility PAss](https://millionairerabbit.io)
