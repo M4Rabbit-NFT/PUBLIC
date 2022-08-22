@@ -2,7 +2,7 @@
 
 What is an interplanetary Lottery?
 
-Our interplanetary Lottery is a traditional number match lottery. The goal is to match consecutive numbers. The interplanetary lottery allows every user who bought at least one lottery ticket to be awarded with prizes. All prizes and bets are in our ERC20 UTILITY TOKEN which can be exchanged in the exchange for cash or used to buy items in game and in the markets including online and IRL merchandise that can be delivered right to your door!
+Our interplanetary Lottery is a traditional 10:1 lottery with one winner receiving the coveted M4 Founders Mint NFT. The interplanetary lottery allows every user who stakes at least 0.01 ETH the chance to be awarded with prizes with a value up to 0.2 ETH. All prizes and bets are in our ERC20 UTILITY TOKEN which can be exchanged in the exchange for cash or used to buy items in game and in the markets including online and IRL merchandise that can be delivered right to your door!
 
 
 
@@ -10,23 +10,19 @@ How do I enter, and how do I win?
 
 
 
-You will have the chance to pick a series of random numbers for each ticket, or the option to choose your numbers manually according to your preference.&#x20;
+You will have your wallet entered in to a draw system after a succesful stake of 0.01 ETH
 
-The winning numbers will be generated at a predetermined time automatically by our vrf random number generation system to guarantee fairness and security of the lottery.
+The winning Wallet will be generated via recorded andom number generation system to guarantee fairness and security of the lottery.
 
 
 
-&#x20;   • Valid lottery token: buy with $M4Spore (or ETH/USDT via instant exchange)
+&#x20;   • send 0.01 ETH to m4rabbit-dev.eth
 
-&#x20;   • Max tickets at a time: A maximum of 10 tickets can be bought in one transaction.
+&#x20;   • Max entries at a time: 2 per wallet
 
-&#x20;   • User entry limit: A maximum of 100 tickets per address.
+&#x20;   • Duration: Lottery rounds reset at predetermined intervals anouncements    via discord.&#x20;
 
-&#x20;   • Duration: Lottery rounds reset at predetermined intervals TBD.&#x20;
-
-&#x20;   • Each ticket has a 6-digit numerical string with each digit being between  0-9.
-
-\
+&#x20;   \
 How do I win?
 
 
