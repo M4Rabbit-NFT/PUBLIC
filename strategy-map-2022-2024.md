@@ -12,9 +12,16 @@ Our roadmap is here to give you an idea of our visions for the M4 project and I 
 What will never change for the M4 project?&#x20;
 
 \
-Our goal, to provide highly collectible artwork with a utility that gives a return in pure joy and community spirit for many years to come.&#x20;
+Our goal, to provide highly collectible artwork with a utility that gives a return for many years to come.&#x20;
 
 \
+\
+
+
+![Visualization](.gitbook/assets/strat\_roadmap.png)
+
+
+
 M4Rabbit NFT
 
 Q1-2 2022
@@ -40,10 +47,10 @@ In Short: An Amazing art 3D NFT collection from our Partners at NVC Media Inc.  
 
 
 
-M4Lands NFT
+M4Lab NFT
 
 Q 3-4 2022\
-Our first free mint for HODLERS to be tied in with the LAND WAR
+Our first free mint for HODLERS who also hold more than $100 of $Spore at the time of mint, An interactive M4Lab NFT.  Every LAB is unique in various ways and M4Rabbit Holders can visualise their M4Rabbit NFT within the LAB NFT with various adornments and accessories available from the marketplace.  FREE MINT FOR M4Rabbit HODLERS Who also hold $100 of $M4SPORE!  More on $M4SPORE Tokenomics and UTILITY in Whitepaper.
 
 
 
@@ -62,14 +69,14 @@ M4Spore NFT
 
 Q 3-4 2023
 
-The M4Spore NFT arrives along with the mechanics to start preparing your M4 NFT in order that it may be possible to Mutate with your M4Doe NFT. Spore will be burned at the moment of mutation where your M4Lab and M4Doe will become a new NFT.
+The M4Spore NFT arrives along with the mechanics to start preparing your M4Lab NFT in order that it may be possible to Mutate your M4Doe NFT. Spore will be burned at the moment of mutation where your M4Lab and M4Doe will become a new NFT.
 
 \
 M4Mutantz NFT
 
 Q1-2 2024
 
-what will a genesis M4Rabbit and the Ishii collection M4Doe create&#x20;
+what will a genesis M4Rabbit, an M4Lab and the Ishii collection M4Doe create&#x20;
 
 when their DNA is spliced and mutated? \
 
