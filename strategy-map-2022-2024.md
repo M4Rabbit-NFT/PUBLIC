@@ -12,21 +12,13 @@ Our roadmap is here to give you an idea of our visions for the M4 project and I 
 What will never change for the M4 project?&#x20;
 
 \
-Our goal, to provide highly collectible artwork with a utility that gives a return for many years to come.&#x20;
+Our goal, to provide highly collectible artwork with a utility that gives a return in pure joy and community spirit for many years to come.&#x20;
 
 \
-\
-
-
-![Visualization](.gitbook/assets/strat\_roadmap.png)
-
-
-
 M4Rabbit NFT
 
 Q1-2 2022
 
-\
 
 
 Doxxed Team building / art creation, lore and development
@@ -34,8 +26,6 @@ Doxxed Team building / art creation, lore and development
 NVC Media creates the highest quality 3D artwork within the space and an imagination that brings a warrior rabbit to life. M4 is more than an art piece, we have a 3 person team of science fiction script writers that will give M4 and his legion soul, meaning and intrigue. This saga will be book worthy!&#x20;
 
 Parallel Shift developers design contracts for everything M4. Over 20 years of development, coding and game development experience will ensure your transactions on the blockchain are not only efficient but secure. Now, our solid foundation is built and ready to grow.
-
-
 
 Secure a partnership with Wenmint launchpad.&#x20;
 
@@ -47,10 +37,10 @@ In Short: An Amazing art 3D NFT collection from our Partners at NVC Media Inc.  
 
 
 
-M4Lab NFT
+M4Lands NFT
 
 Q 3-4 2022\
-Our first free mint for HODLERS who also hold more than $100 of $Spore at the time of mint, An interactive M4Lab NFT.  Every LAB is unique in various ways and M4Rabbit Holders can visualise their M4Rabbit NFT within the LAB NFT with various adornments and accessories available from the marketplace.  FREE MINT FOR M4Rabbit HODLERS Who also hold $100 of $M4SPORE!  More on $M4SPORE Tokenomics and UTILITY in Whitepaper.
+Our first free mint for HODLERS to be tied in with the LAND WAR
 
 
 
@@ -69,14 +59,14 @@ M4Spore NFT
 
 Q 3-4 2023
 
-The M4Spore NFT arrives along with the mechanics to start preparing your M4Lab NFT in order that it may be possible to Mutate your M4Doe NFT. Spore will be burned at the moment of mutation where your M4Lab and M4Doe will become a new NFT.
+The M4Spore NFT arrives along with the mechanics to start preparing your M4 NFT in order that it may be possible to Mutate with your M4Doe NFT. Spore will be burned at the moment of mutation where your M4Lab and M4Doe will become a new NFT.
 
 \
 M4Mutantz NFT
 
 Q1-2 2024
 
-what will a genesis M4Rabbit, an M4Lab and the Ishii collection M4Doe create&#x20;
+what will a genesis M4Rabbit and the Ishii collection M4Doe create&#x20;
 
 when their DNA is spliced and mutated? \
 
