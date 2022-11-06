@@ -11,6 +11,3 @@
 * [🕹 Games](games/README.md)
   * [🎟 Interplanetary Lottery](games/interplanetary-lottery.md)
   * [🏴☠ Occupy Vallara](games/interplanetary-clashes.md)
-* [💵 Discount Pass](discount-pass/README.md)
-  * [❄ Avalanche Utility Pass](discount-pass/avalanche-utility-pass.md)
-  * [Millionaire Rabbit M4 Utility PAss](https://millionairerabbit.io)

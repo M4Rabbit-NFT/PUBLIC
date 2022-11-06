@@ -10,14 +10,12 @@ possibility exists to create mirror tokens on low gas network polygon or bsc or 
 Features available to NFT HOLDER
 
 * Win Rewards from 20% of all NFT Sales
-* Buy $M4Spore for ETH (discounted)
+* Buy $M4Spore for ETH&#x20;
 * Buy accessories with $M4Spore
 * Stake NFT for $M4Spore
-* Buy M4 Lab NFT for ETH or $M4Spore
-* Build/Kit Out personal M4 LAB NFT  using $M4Spore
 * Discounted Printed materials (custom) Posters, hardback/softback book of story
-* Free entry to Games for $M4Spore Rewards
-* 3D Metaverse Building & Expansion – community decisions
+* entry to Games for $M4Spore Rewards
+* 3D Metaverse Building & Expansion – Spatial.io
 
 \
 
@@ -76,5 +74,3 @@ CUSTOMISABLE LIKE NEVER BEFORE!
 &#x20;       ◦ ACCESSORIES
 
 • CUSTOMISE WITH YOUR VERY OWN 3D NFT!!
-
-* Discount if purchased using $Spore Token
